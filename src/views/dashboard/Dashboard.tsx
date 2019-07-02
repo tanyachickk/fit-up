@@ -1,3 +1,7 @@
 import React from 'react';
 
-export default () => <div>Dashboard</div>;
+export default () => (
+  <div>
+    <div>Dashboard</div>
+  </div>
+);

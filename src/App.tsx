@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import Dashboard from '@/views/dashboard';
-import Diary from '@/views/diary';
+import routes from '@/routes';
 import Main from '@/views/main';
+
+import 'reset-css';
+import './styles.css';
 
 const App: React.FC = () => {
   return (
-    <Main>
-      <Router>
-        <Route path='/' exact component={Dashboard} />
-        <Route path='/diary' component={Diary} />
-      </Router>
-    </Main>
+    <Router>
+      <Main>
+        {routes.map((routeOptions, i) => (
+          <Route key={i} {...routeOptions} />
+        ))}
+      </Main>
+    </Router>
   );
 };
 
