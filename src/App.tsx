@@ -4,7 +4,7 @@ import routes from '@/routes';
 import Main from '@/views/main';
 
 import 'reset-css';
-import './styles.css';
+import '@/styles/main.css';
 
 const App: React.FC = () => {
   return (

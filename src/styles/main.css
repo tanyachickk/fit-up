@@ -1,0 +1,5 @@
+@import './react-calendar.css';
+
+* {
+  box-sizing: border-box;
+}
